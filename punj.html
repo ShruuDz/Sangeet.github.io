@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sangeet - Feel the music ♪</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/114c7fb4aa.js" crossorigin="anonymous"></script>
+        <!-- Google Font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Comic+Neue&family=Montserrat&family=Nunito:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- favicon -->
+        <link href="img/sangeet-website-favicon-white.png" rel="icon" type="image/x-icon">
+    </head>
+<body id="play-section">
+    <section id="head-section">
+        <div class="container-fluid">
+      
+          <!-- Nav Bar Section -->
+          <nav class="navbar navbar-expand-lg  navbar-dark  pt-5 px-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/sangeet-high-resolution-logo-white-on-transparent-background.png" alt="" width="150" height="30" class="d-inline-block align-text-top "></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-5 pt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="playlist.html">Playlists</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Feedback</a>
+                  </li>
+                </ul>
+                <hr>
+              
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section> 
+
+    
+<!--Breadcrumb section  -->
+
+<section class="breadcrumbs-section">
+  <div class="container-fluid p-5 mb-4">
+    <div class="row">
+        <div class="col-12 text-left">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="playlist.html">Playlist</a></li>
+              <li class="breadcrumb-item active">Punjabi Swag</li>
+            </ol>
+        </div>
+    <hr>
+    </div>
+    
+    <!-- Playlist  section -->
+    <div class="row pt-5">
+        <div class="col-lg-3  col-sm-6 pb-5">
+          <div class="card container-fluid play-card" style="width: 15rem;">
+            <img class="img img-fluid card-img pt-3" src="images/desires.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Desires</h6>
+              <small class="card-text">AP Dhillon, Gurinder Gill</small><br>
+              <audio id="songp1" src="music/Desires_1.mp3"></audio>
+              <button  class="btn btn-outline play-btn float-end" id="playp1"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 pb-5">
+          <div class="card container-fluid play-card" style="width: 15rem;">
+            <img class="img img-fluid card-img pt-4" src="images/dogallan.jpg" class="card-img-top" alt="...">
+            <div class="card-body pb-3">
+              <h6 class="card-title pt-4">Do Gallan</h6>
+              <small class="card-text">Garry Sandhu</small><br>
+              <audio id="songp2" src="music/Lets_Talk_Do_Gallan_1.mp3"></audio>
+              <button  class="btn btn-outline play-btn float-end "id="playp2"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-sm-6 pb-5">
+          <div class="card container-fluid play-card" style="width: 15rem; ;">
+            <img class="img img-fluid card-img pt-3" src="images/nolove.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h6 class="card-title">No Love</h6>
+              <small class="card-text">Shubh</small><br>
+              <audio id="songp3" src="music/Shubh - No Love(PagalWorld.com.se).mp3"></audio>
+              <button  class="btn btn-outline play-btn float-end pt-2"id="playp3"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 pb-5">
+          <div class="card container-fluid play-card" style="width: 15rem;">
+            <img class="img img-fluid card-img pt-3" src="images/vail.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title pt-0">Vail</h6>
+              <small class="card-text">Mankirt Aulakh</small><br>
+              <audio id="songp4" src="music/Vail_1.mp3"></audio>
+              <button  class="btn btn-outline play-btn float-end pt-0"id="playp4"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row pt-5">
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/moonlight.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Moonlight</h6>
+            <small class="card-text">Harnoor</small><br>
+            <audio id="songp5" src="music/Moonlight_1.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end" id="playp5"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/Lemonade-Diljit Dosanjh.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Lemonade</h6>
+            <small class="card-text">Diljit Dosanjh</small><br>
+            <audio id="songp6" src="music/Lemonade(PagalWorld.com.se).mp3"></audio>
+            <button class="btn btn-outline play-btn float-end"id="playp6"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem; ;">
+          <img class="img img-fluid card-img pt-3 pb-2" src="images/Tere-Te.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Tere Te</h6>
+            <small class="card-text">Ap Dhillon</small><br>
+            <audio id="songp7" src="music/Tere_Te_1.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end"id="playp7"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img py-3" src="images/295.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">295</h6>
+            <small class="card-text">Sidhu Moosewala</small><br>
+            <audio id="songp8" src="music/295(PagalWorld).mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-3 pb-1"id="playp8"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/prada.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Prada</h6>
+            <small class="card-text">Jass Manak</small><br>
+            <audio id="songp9" src="music/Prada(PagalWorld).mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end" id="playp9"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/att-tera-yaar.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Att Tera Yaar</h6>
+            <small class="card-text">Navv Inder, Bani J.</small><br>
+            <audio id="songp10" src="music/Att-Tera-Yaar-Navv-Inder-Bani-J.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end"id="playp10"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem; ;">
+          <img class="img img-fluid card-img pt-3" src="images/dasi-na-mere-bare.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Dasi Na Mere Baare</h6>
+            <small class="card-text">Goldy (Desi Crew)</small><br>
+            <audio id="songp11" src="music/Dasi_Na_Mere_Baare_1.mp3"></audio>
+            <button class="btn btn-outline play-btn float-end"id="playp11"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/12-Saal.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">12 Saal</h6>
+            <small class="card-text">Bilal Saeed</small><br>
+            <audio id="songp12" src="music/12 Saal - Bilal Saeed.mp3"></audio>
+            <button class="btn btn-outline play-btn float-end pt-2"id="playp12"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+<!-- footer section -->
+
+<footer id="footer">
+    <a href="https://github.com/ShruuDz">
+    <i class="social-icon fa-brands fa-github fa-2x"></i></a>
+    <a href="https://www.instagram.com/shruti.__.dubey/?hl=en"><i class="social-icon fa-brands fa-instagram fa-2x"></i></a>
+    <a href="https://youtube.com/playlist?list=PL-zTYluARP48Oor0fTLJsD-fMd-zVZWvy">
+    <i class="social-icon fa-brands fa-youtube fa-2x"></i></a>
+    <p>The perfect place for music heaven.<br><small>Copyright © Sangeet.</small></p>
+  </footer>
+
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script>
+  // for Punjabi Playlist
+     
+var myaud1=document.getElementById("songp1");
+var bttn1=document.getElementById("playp1");
+
+playp1.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud1.paused){
+    myaud1.play();
+    document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud1.pause();
+    document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+ 
+var myaud2=document.getElementById("songp2");
+var bttn2=document.getElementById("playp2");
+
+playp2.onclick=function(){
+  // to pause other songs
+  myaud1.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud2.paused){
+    myaud2.play();
+    document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud2.pause();
+    document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud3=document.getElementById("songp3");
+var bttn3=document.getElementById("playp3");
+
+playp3.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud1.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud3.paused){
+    myaud3.play();
+    document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud3.pause();
+    document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud4=document.getElementById("songp4");
+var bttn4=document.getElementById("playp4");
+
+playp4.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud1.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud4.paused){
+    myaud4.play();
+    document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud4.pause();
+    document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud5=document.getElementById("songp5");
+var bttn5=document.getElementById("playp5");
+
+playp5.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud1.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud5.paused){
+    myaud5.play();
+    document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud5.pause();
+    document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud6=document.getElementById("songp6");
+var bttn6=document.getElementById("playp6");
+
+playp6.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud1.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud6.paused){
+    myaud6.play();
+    document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud6.pause();
+    document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud7=document.getElementById("songp7");
+var bttn7=document.getElementById("playp7");
+
+playp7.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud1.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud7.paused){
+    myaud7.play();
+    document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud7.pause();
+    document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud8=document.getElementById("songp8");
+var bttn8=document.getElementById("playp8");
+
+playp8.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud1.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud8.paused){
+    myaud8.play();
+    document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud8.pause();
+    document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud9=document.getElementById("songp9");
+var bttn9=document.getElementById("playp9");
+
+playp9.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud1.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud9.paused){
+    myaud9.play();
+    document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud9.pause();
+    document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud10=document.getElementById("songp10");
+var bttn10=document.getElementById("playp10");
+
+playp10.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud1.pause();myaud11.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud10.paused){
+    myaud10.play();
+    document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud10.pause();
+    document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud11=document.getElementById("songp11");
+var bttn11=document.getElementById("playp11");
+
+playp11.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud1.pause();myaud12.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud11.paused){
+    myaud11.play();
+    document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud11.pause();
+    document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+var myaud12=document.getElementById("songp12");
+var bttn12=document.getElementById("playp12");
+
+playp12.onclick=function(){
+  // to pause other songs
+  myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud1.pause();
+  // for other songs icons
+  document.getElementById("playp2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  document.getElementById("playp1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  if(myaud12.paused){
+    myaud12.play();
+    document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+  }
+  else{
+    myaud12.pause();
+    document.getElementById("playp12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+  }
+}
+
+  </script>
+<!-- script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>

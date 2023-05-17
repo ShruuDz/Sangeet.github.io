@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sangeet - Feel the music ♪</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/114c7fb4aa.js" crossorigin="anonymous"></script>
+        <!-- Google Font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Comic+Neue&family=Montserrat&family=Nunito:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- favicon -->
+        <link href="img/sangeet-website-favicon-white.png" rel="icon" type="image/x-icon">
+    </head>
+<body id="play-section">
+    <section id="head-section">
+        <div class="container-fluid">
+      
+          <!-- Nav Bar Section -->
+          <nav class="navbar navbar-expand-lg  navbar-dark  pt-5 px-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/sangeet-high-resolution-logo-white-on-transparent-background.png" alt="" width="150" height="30" class="d-inline-block align-text-top "></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-5 pt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="playlist.html">Playlists</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Feedback</a>
+                  </li>
+                </ul>
+                <hr>
+              
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section> 
+
+    
+<!--Breadcrumb section  -->
+
+<section class="breadcrumbs-section">
+  <div class="container-fluid p-5 mb-4">
+    <div class="row">
+        <div class="col-12 text-left">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="playlist.html">Playlist</a></li>
+              <li class="breadcrumb-item active">Retro Chill</li>
+            </ol>
+        </div>
+    <hr>
+    </div>
+    
+    <!-- Playlist  section -->
+    <div class="row pt-5">
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/lagjaagale.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Lag Jaa Gale</h6>
+            <small class="card-text">Lata Mangeshkar</small><br>
+            <audio id="song1" src="music/128-Lag Ja Gale Se Phir - Woh Kaun Thi  (1964) 128 Kbps.mp3"></audio>
+            <button class="btn btn-outline play-btn float-end" id="play1"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/mainepuchachandse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Maine Poochha Chand Se</h6>
+            <small class="card-text">Mohammed Rafi</small><br>
+            <audio id="song2" src="music/Maine Poochha Chand Se - Abdullah.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end"id="play2"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem; ;">
+          <img class="img img-fluid card-img pt-3 pb-3 " src="images/Zindagi Ke Safar.jpg" class="card-img-top" alt="...">
+          <div class="card-body pt-2">
+            <h6 class="card-title pt-4">Zindagi Ke Safar Mein</h6>
+            <small class="card-text">Kishor Kumar</small><br>
+            <audio id="song3" src="music/Zindagi Ke Safar Mein_192(Ghantalele.com).mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play3"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/kyakhooblagtiho.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Kya Khoob Lagti Ho</h6>
+            <small class="card-text">Mukesh, Kanchan</small><br>
+            <audio id="song4" src="music/Kya Khoob Lagti Ho.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play4"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/ek-pyar-ka-nagma-hai.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Ek Pyar Ka Nagma Hai</h6>
+            <small class="card-text">Lata Mangeshkar</small><br>
+            <audio id="song5" src="music/old_Shor-Ek Pyar Ka Nagma Hai.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play5"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-2" src="images/isharon-isharon-men-dil-lenewale.png" class="card-img-top" alt="...">
+          <div class="card-body pt-1">
+            <h6 class="card-title">Isharo Isharo Me Dil Lene Wale</h6>
+            <small class="card-text">Asha Bhosle,Mohammed Rafi </small><br>
+            <audio id="song6" src="music/bollywood_KKK - Isharon Isharon Mein.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play6"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-2" src="images/pal-pal-dil-ke.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Pal Pal Dil Ke Pass</h6>
+            <small class="card-text">Kishor Kumar </small><br>
+            <audio id="song7" src="music/old_BM-Pal Pal Dil Ke Pas.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play7"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/Chala-Jata-Hoon.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Chala Jaata Hoon</h6>
+            <small class="card-text">Kishor Kumar </small><br>
+            <audio id="song8" src="music/old_MJS-Chala Jata Hoon.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play8"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-2" src="images/tumko-dekha-toh-ye.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Tumko Dekha To Ye Khyal Aaya</h6>
+            <small class="card-text">Jagjit Singh </small><br>
+            <audio id="song9" src="music/old_Saath Saath-Tum Ko Dekha.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play9"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/Likhe Jo Khat Tujhe.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Likhe Jo Khat Tujhe</h6>
+            <small class="card-text">Mohammed Rafi </small><br>
+            <audio id="song10" src="music/old_mohd_rafi_1 (107).mp3"></audio>
+            <button class="btn btn-outline play-btn float-end pt-4"id="play10"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card pt-3" style="width: 15rem;">
+          <img class="img img-fluid card-img" src="images/Hum-Tere-Aashiq-Hain.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Hum To Tere Ashiq</h6>
+            <small class="card-text">Lata Mangeshkar,Mukesh </small><br>
+            <audio id="song11" src="music/old_Farz-Hum To Tere Aashiq.mp3"></audio>
+            <button  class="btn btn-outline play-btn float-end pt-4"id="play11"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 pb-5">
+        <div class="card container-fluid play-card" style="width: 15rem;">
+          <img class="img img-fluid card-img pt-3" src="images/kon disha.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Kon Disha</h6>
+            <small class="card-text">Hemlata,Jaspal </small><br>
+            <audio id="song12" src="music/old_Nadiya Ke Paar - Kaun Disha.mp3"></audio>
+            <button class="btn btn-outline play-btn float-end pt-4"id="play12"><i class="fa-solid fa-circle-play fa-3x"></i></button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- footer section -->
+<hr>
+<footer id="footer">
+    <a href="https://github.com/ShruuDz">
+    <i class="social-icon fa-brands fa-github fa-2x"></i></a>
+    <a href="https://www.instagram.com/shruti.__.dubey/?hl=en"><i class="social-icon fa-brands fa-instagram fa-2x"></i></a>
+    <a href="https://youtube.com/playlist?list=PL-zTYluARP48Oor0fTLJsD-fMd-zVZWvy">
+    <i class="social-icon fa-brands fa-youtube fa-2x"></i></a>
+    <p>The perfect place for music heaven.<br><small>Copyright © Sangeet.</small></p>
+  </footer>
+
+  <script>
+    // for Bhakti Plylist
+       
+  var myaud1=document.getElementById("song1");
+  
+  play1.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud1.paused){
+      myaud1.play();
+      document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud1.pause();
+      document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+   
+  var myaud2=document.getElementById("song2");
+  
+  play2.onclick=function(){
+    // to pause other songs
+    myaud1.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud2.paused){
+      myaud2.play();
+      document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud2.pause();
+      document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud3=document.getElementById("song3");
+  
+  play3.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud1.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud3.paused){
+      myaud3.play();
+      document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud3.pause();
+      document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud4=document.getElementById("song4");
+  
+  play4.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud1.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud4.paused){
+      myaud4.play();
+      document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud4.pause();
+      document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud5=document.getElementById("song5");
+  
+  play5.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud1.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud5.paused){
+      myaud5.play();
+      document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud5.pause();
+      document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud6=document.getElementById("song6");
+  
+  play6.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud1.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud6.paused){
+      myaud6.play();
+      document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud6.pause();
+      document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud7=document.getElementById("song7");
+  
+  play7.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud1.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud7.paused){
+      myaud7.play();
+      document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud7.pause();
+      document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud8=document.getElementById("song8");
+  
+  play8.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud1.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud8.paused){
+      myaud8.play();
+      document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud8.pause();
+      document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud9=document.getElementById("song9");
+  
+  play9.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud1.pause();myaud10.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud9.paused){
+      myaud9.play();
+      document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud9.pause();
+      document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud10=document.getElementById("song10");
+  
+  play10.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud1.pause();myaud11.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud10.paused){
+      myaud10.play();
+      document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud10.pause();
+      document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud11=document.getElementById("song11");
+  
+  play11.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud1.pause();myaud12.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud11.paused){
+      myaud11.play();
+      document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud11.pause();
+      document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  var myaud12=document.getElementById("song12");
+  
+  play12.onclick=function(){
+    // to pause other songs
+    myaud2.pause();myaud3.pause();myaud4.pause();myaud5.pause();myaud6.pause();myaud7.pause();myaud8.pause();myaud9.pause();myaud10.pause();myaud11.pause();myaud1.pause();
+    // for other songs icons
+    document.getElementById("play2").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play3").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play4").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play5").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play6").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play7").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play8").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play9").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play10").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play11").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    document.getElementById("play1").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    if(myaud12.paused){
+      myaud12.play();
+      document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-pause fa-3x"></i>';
+    }
+    else{
+      myaud12.pause();
+      document.getElementById("play12").innerHTML = '<i class="fa-solid fa-circle-play fa-3x"></i>';
+    }
+  }
+  
+  </script>
+  
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!-- script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>

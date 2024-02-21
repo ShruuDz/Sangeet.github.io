@@ -15,7 +15,7 @@ To explore Sangeet locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/sangeet.git
+    git clone https://github.com/the-creative-one/Sangeet.git
 
 To view the project, simply open the `index.html` file in your web browser of choice.
 

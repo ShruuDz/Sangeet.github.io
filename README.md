@@ -21,7 +21,7 @@ To view the project, simply open the `index.html` file in your web browser of ch
 
 ## Feedback
 
-We value your feedback! Please share your thoughts, suggestions, or report any issues using the feedback form available on the website.
+We value your feedback! Please share your thoughts, and suggestions, or report any issues using the feedback form available on the website.
 
 ## About 
 
@@ -29,7 +29,7 @@ Sangeet is a personal project created by a music enthusiast passionate about sha
 
 ## Contact
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your@email.com
+- **GitHub**: [@the-creative-one](https://github.com/the-creative-one)
+- **Deployment Link**: [https://the-creative-one.github.io/Sangeet](https://the-creative-one.github.io/Sangeet)
 
 Thank you for visiting Sangeet and joining us on this musical journey!
